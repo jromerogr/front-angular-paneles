@@ -1,0 +1,18 @@
+$background: #0e0d0d;
+$text: #e8e7e7;
+$accent: #d1001e;
+
+.panel-card{
+    background-color: $background;
+    border: 1px solid white;
+}
+.panel-image{
+    height: 15vh;
+    object-fit: cover;
+}
+
+.panel-button{
+    background-color: $accent !important;
+    color: $text;
+    font-weight: bold;
+}

@@ -1,0 +1,16 @@
+<div *ngIf="paneles.length > 0" class="row gy-4">
+    <div *ngFor="let panel of paneles" class=" col-12 col-md-6 col-lg-4">
+        <div class="card panel-card rounded-0">
+            <img src="https://mdbcdn.b-cdn.net/img/new/standard/nature/184.webp" class="card-img-top rounded-0 panel-image"
+                alt="Fissure in Sandstone" />
+            <div class="card-body">
+                <h5 class="card-title">{{panel.name}}</h5>
+                <p class="card-text">{{panel.description}}</p>
+                <button type="button" class="btn rounded-0 float-end panel-button" mdbRipple [rippleCentered]="true"><i class="fas fa-angle-double-right"></i></button>
+            </div>
+        </div>
+    </div>
+</div>
+<div *ngIf="paneles.length < 1">
+    <div>No se han encontrado resultados</div>
+</div>

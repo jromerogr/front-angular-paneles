@@ -5,3 +5,21 @@
 @import '@fortawesome/fontawesome-free/scss/brands.scss';
  
 @import 'mdb-angular-ui-kit/assets/scss/mdb.scss';
+
+$background: #0e0d0d;
+$text: #e8e7e7;
+$accent: #d1001e;
+
+
+html,
+body {
+    height: 100vh;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    color: $text;
+    background-color: $background;
+    font-weight: bold;
+}
