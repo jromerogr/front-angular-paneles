@@ -1,16 +1,2 @@
-<div class="container mt-5">
-  <div class="row">
-      <div class="col-12">
-        <mdb-form-control class="form-white" [formGroup]="filterForm">
-          <input mdbInput type="text" id="buscador" class="form-control form-control-lg rounded-0" formControlName="filter"/>
-          <label mdbLabel class="form-label" for="buscador">Buscador de paneles</label>
-        </mdb-form-control>
-        <hr class="hr" />
-      </div>
-      <div class="col-12>">
-        <app-panel-list [filter]="filterForm.value.filter"></app-panel-list>
-      </div>
-  </div>
-</div>
 
 <router-outlet></router-outlet>

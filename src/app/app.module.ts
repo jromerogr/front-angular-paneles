@@ -21,11 +21,13 @@ import { MdbTooltipModule } from 'mdb-angular-ui-kit/tooltip';
 import { MdbValidationModule } from 'mdb-angular-ui-kit/validation';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { PanelListComponent } from './panel-list/panel-list.component';
+import { PanelComponent } from './panel/panel.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    PanelListComponent
+    PanelListComponent,
+    PanelComponent
   ],
   imports: [
     BrowserModule,
