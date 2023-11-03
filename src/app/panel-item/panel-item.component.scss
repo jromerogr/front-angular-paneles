@@ -1,0 +1,31 @@
+$background: #0e0d0d;
+$text: #e8e7e7;
+$accent: #d1001e;
+
+.panel-item{
+    border: 2px solid $text;
+}
+
+.panel-item img{
+    height: 10vh;
+    object-fit: cover;
+}
+
+.panel-item-title{
+    background-color: $accent;
+}
+
+.panel-item-description{
+    font-size: 90%;
+}
+
+.panel-item-button{
+    background-color: $accent !important;
+    color: $text;
+    font-weight: bold;
+}
+
+.panel-item-info{
+    font-weight: 300;
+    font-size: 85%;
+}

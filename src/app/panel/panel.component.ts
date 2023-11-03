@@ -22,6 +22,7 @@ export class PanelComponent implements OnInit{
   ngOnInit(){
     const panelId = this.route.snapshot.paramMap.get('panelId')
     this.panel = this.paneles.find(panel=> panel.id === panelId) || {"id":"","name":"","description":"","banner":""}
+
   }
 
   

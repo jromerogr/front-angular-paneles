@@ -22,12 +22,14 @@ import { MdbValidationModule } from 'mdb-angular-ui-kit/validation';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { PanelListComponent } from './panel-list/panel-list.component';
 import { PanelComponent } from './panel/panel.component';
+import { PanelItemComponent } from './panel-item/panel-item.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PanelListComponent,
-    PanelComponent
+    PanelComponent,
+    PanelItemComponent
   ],
   imports: [
     BrowserModule,
