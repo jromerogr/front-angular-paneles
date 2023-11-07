@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -23,13 +24,17 @@ import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { PanelListComponent } from './panel-list/panel-list.component';
 import { PanelComponent } from './panel/panel.component';
 import { PanelItemComponent } from './panel-item/panel-item.component';
+import { TimeAgoPipe } from './pipes';
+
+
 
 @NgModule({
   declarations: [
     AppComponent,
     PanelListComponent,
     PanelComponent,
-    PanelItemComponent
+    PanelItemComponent,
+    TimeAgoPipe
   ],
   imports: [
     BrowserModule,
@@ -50,7 +55,8 @@ import { PanelItemComponent } from './panel-item/panel-item.component';
     MdbTooltipModule,
     MdbValidationModule,
     NoopAnimationsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

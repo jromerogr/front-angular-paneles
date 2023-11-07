@@ -2,16 +2,16 @@
     <div class="row">
         <div class="col-12">
           <mdb-form-control class="form-white" [formGroup]="filterForm">
-            <input mdbInput type="text" id="buscador" class="form-control form-control-lg rounded-0" formControlName="filter" (keydown)="updateFilter()"/>
+            <input mdbInput type="text" id="buscador" class="form-control form-control-lg rounded-0" formControlName="filter" (keyup)="updateFilter()"/>
             <label mdbLabel class="form-label" for="buscador">Buscador de paneles</label>
           </mdb-form-control>
           <hr class="hr" />
         </div>
-        <div class="col-12>">
+        <div class="col-12>" *ngIf="!loading">
             <div *ngIf="paneles.length > 0" class="row gy-4">
                 <div *ngFor="let panel of paneles" class=" col-12 col-md-6 col-lg-4">
                     <div class="card panel-card rounded-0">
-                        <img src="https://mdbcdn.b-cdn.net/img/new/standard/nature/184.webp" class="card-img-top rounded-0 panel-image"
+                        <img [src]="panel.banner" class="card-img-top rounded-0 panel-image"
                             alt="Fissure in Sandstone" />
                         <div class="card-body">
                             <h5 class="card-title">{{panel.name}}</h5>
@@ -24,6 +24,11 @@
             <div *ngIf="paneles.length < 1">
                 <div>No se han encontrado resultados</div>
             </div>            
+        </div>
+        <div class="col-12 text-center mt-5" *ngIf="loading">
+            <div class="spinner-border text-danger" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
         </div>
     </div>
   </div>
